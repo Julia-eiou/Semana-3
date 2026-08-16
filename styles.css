@@ -1,0 +1,66 @@
+/* Configuración general y fondo con degradado suave */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Tarjeta contenedora estilo 'Glassmorphic' */
+.card {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    width: 100%;
+    max-width: 420px;
+    box-sizing: border-box;
+}
+
+.card h1 {
+    margin-top: 0;
+    color: #2d3748;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Caja de texto interactiva */
+#campo {
+    width: 100%;
+    height: 120px;
+    padding: 12px;
+    border: 2px solid #e2e8f0;
+    border-radius: 10px;
+    font-size: 0.95rem;
+    font-family: inherit;
+    resize: none;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+    outline: none;
+}
+
+/* Efecto al hacer clic o escribir en la caja */
+#campo:focus {
+    border-color: #667eea;
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.25);
+}
+
+/* Área del contador */
+.contador-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+}
+
+#contador {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #718096;
+    background: #edf2f7;
+    padding: 4px 10px;
+    border-radius: 20px;
+}
